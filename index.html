@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abake Cake</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body style="background-color:#FFFFFF;">
+    <!-- navbar -->
+
+
+    <!-- SECTION 1: NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #FFFFFF;">
+
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#home">
+                <img src="Assert/logo.png"  alt="Abaked Bakery Logo" style="height: 70px; width: auto; display: block;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a href="#contact" class="btn mt-2 mt-lg-0" style="background-color: #17469E;
+                              color: white;
+                              border-radius: 25px;
+                              padding: 10px 22px;">
+                            Pesan Sekarang
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section id="home" style="background-color: #F8F6F0; padding: 60px 0;">
+
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <!-- Text -->
+                <div class="col-12 col-lg-6">
+
+                    <p style="color: #7899BD; letter-spacing: 3px;">
+                        HOMEMADE WITH LOVE
+                    </p>
+
+                    <h1 style="color: #344B68; font-size: 42px; font-weight: bold;">
+                        Sweet Moments,<br>
+                        Beautiful Cakes.
+                    </h1>
+
+                    <p style="color: #666; line-height: 1.8;">
+                        Nikmati Cake homemade yang dibuat dengan cinta
+                        untuk ulang tahun, hadiah, dan momen spesial Anda.
+                    </p>
+
+                    <a href="#contact" class="btn" style="background-color: #7899BD;
+                          color: white;
+                          padding: 12px 25px;
+                          border-radius: 25px;">
+                        Pesan Sekarang
+                    </a>
+
+                </div>
+
+                <!-- Cake Image -->
+                <div class="col-12 col-lg-6">
+
+                    <img src="Assert/Cake1.jpeg" alt="Kue ulang tahun" class="img-fluid"
+                        style="width: 100%; border-radius: 20px;">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CAKE MENU -->
+
+    <section id="menu" style="padding: 60px 0;">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 style="color: #344B68; font-weight: bold;">
+                    Our Cake Menu
+                </h2>
+
+                <p style="color: #777;">
+                    Sedia Untuk Anda
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+
+                        <img src="Assert/custom.jpeg" class="card-img-top" alt="Custom Cake"
+                            style="height: 230px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Cake</h5>
+
+                            <p class="card-text text-secondary">
+                                Cake untuk acara special, seperti ulang tahun, pernikahan, anniversary dan perayaan
+                                lainnya. Desain, rasa, dan rekorasi dapat
+                                disesuaikan .
+                            </p>
+
+                            <p class="fw-bold" style="color: #7899BD;">
+                                Mulai Rp150.000
+                            </p>
+
+                            <button type="button" class="btn w-100" onclick="pilihKue('Custom Cake')"
+                                style="background-color: #7899BD; color: white;">
+                                Pilih
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+
+                        <img src="Assert/Cream roll.jpeg" class="card-img-top" alt="Cream Roll"
+                            style="height: 230px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Cream Roll</h5>
+
+                            <p class="card-text text-secondary">
+                                Bolu gulung lembut dengan krim ceamy dan topping kuning keemasan yang menggugah selera.
+                            </p>
+
+                            <p class="fw-bold" style="color: #7899BD;">
+                                Rp175.000
+                            </p>
+
+                            <button type="button" class="btn w-100" onclick="pilihKue('Cream Roll')"
+                                style="background-color: #7899BD; color: white;">
+                                Pilih
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm">
+
+                        <img src="Assert/cupcake.jpeg" class="card-img-top" alt="Cupcake Marshmallow"
+                            style="height: 230px; object-fit: cover;">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Cupcake Marshmallow</h5>
+
+                            <p class="card-text text-secondary">
+                                Cupcak lembut dengan frosting pastel dan marhmallow warna-warni yang manis dena menarik.
+                            </p>
+
+                            <p class="fw-bold" style="color: #7899BD;">
+                                Rp200.000
+                            </p>
+
+                            <button type="button" class="btn w-100" onclick="pilihKue('Cupcake Marshmallow')"
+                                style="background-color: #7899BD; color: white;">
+                                Pilih Kue
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: ABOUT US -->
+
+    <section id="about" style="background-color: #F8F6F0; padding: 60px 0;">
+
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <div class="col-12 col-lg-5">
+                    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=800&q=80"
+                        alt="Homemade bakery" class="img-fluid" style="width: 100%; border-radius: 20px;">
+                </div>
+
+                <div class="col-12 col-lg-7">
+
+                    <h2 style="color: #344B68; font-weight: bold;">
+                        About Abake Cake
+                    </h2>
+
+                    <p style="color: #666; line-height: 1.9;">
+                        Abake Cake adalah usaha kue homemade yang dibuat
+                        dengan penuh perhatian dan cinta.
+                        Kami percaya bahwa setiap kue dapat menjadi bagian
+                        dari momen yang indah dan berkesan.
+                    </p>
+
+                    <p style="color: #666; line-height: 1.9;">
+                        Kami menyediakan berbagai pilihan kue untuk ulang
+                        tahun, hadiah, dan acara spesial Anda.
+                        Setiap pesanan dibuat dengan memperhatikan rasa,
+                        tampilan, dan kepuasan pelanggan.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT FORM -->
+
+    <section id="contact" style="padding: 60px 0;">
+
+        <div class="container">
+
+            <div class="text-center mb-4">
+                <h2 style="color: #344B68; font-weight: bold;">
+                    Order Your Cake
+                </h2>
+
+                <p style="color: #777;">
+                    Isi formulir berikut untuk memesan kue.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-7">
+
+                    <form id="orderForm">
+
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">
+                                Nama Lengkap
+                            </label>
+
+                            <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">
+                                Email
+                            </label>
+
+                            <input type="email" class="form-control" id="email" placeholder="nama@email.com" required>
+                        </div>
+
+                        <!-- Cake Selection -->
+                        <div class="mb-3">
+                            <label for="kue" class="form-label">
+                                Pilihan Kue
+                            </label>
+
+                            <select class="form-select" id="kue" required>
+                                <option value="">Pilih kue</option>
+                                <option value="Custom Cake">
+                                    Custom Cake
+                                </option>
+                                <option value="Cream Roll">
+                                    Cream Roll
+                                </option>
+                                <option value="Cupcake Marshmallow">
+                                    Cupcake Marshmallow
+                                </option>
+                            </select>
+                        </div>
+
+                        <!-- Details -->
+                        <div class="mb-3">
+                            <label for="detail" class="form-label">
+                                Detail Pesanan
+                            </label>
+
+                            <textarea class="form-control" id="detail" rows="4"
+                                placeholder="Contoh: ukuran, warna, tulisan pada kue..."></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn w-100" style="background-color: #7899BD; color: white;">
+                            Periksa Pesanan
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONFIRMATION MODAL -->
+
+    <div class="modal fade" id="modalKonfirmasi" tabindex="-1" aria-labelledby="judulModal" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="judulModal">
+                        Konfirmasi Pesanan
+                    </h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <p>Periksa kembali detail pesanan Anda:</p>
+
+                    <p><strong>Nama:</strong> <span id="hasilNama"></span></p>
+
+                    <p><strong>Email:</strong> <span id="hasilEmail"></span></p>
+
+                    <p><strong>Kue:</strong> <span id="hasilKue"></span></p>
+
+                    <p><strong>Detail:</strong> <span id="hasilDetail"></span></p>
+
+                    <p class="text-secondary small">
+                        Ini adalah simulasi pemesanan untuk tugas website.
+                        Pesanan belum dikirim ke server.
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Kembali
+                    </button>
+
+                    <button type="button" class="btn" data-bs-dismiss="modal" onclick="konfirmasiPesanan()"
+                        style="background-color: #7899BD; color: white;">
+                        Konfirmasi
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 6: FOOTER -->
+    <footer style="background-color: #344B68; color: white; padding: 35px 0;">
+
+        <div class="container">
+
+            <div class="row g-4 align-items-center">
+
+                <!-- Logo and Description -->
+                <div class="col-12 col-md-6">
+
+                    <h4 style="font-weight: bold;">
+                        Abake Cake
+                    </h4>
+
+                    <p style="color: #DCEBFA; margin-bottom: 0;">
+                        Homemade with Love, Made Just for You.
+                    </p>
+
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-12 col-md-6 text-md-end">
+
+                    <p style="margin-bottom: 10px;">
+                        Follow Us
+                    </p>
+
+                    <a href="https://www.instagram.com/abaked.cake/" target="_blank"
+                        style="color: white; text-decoration: none; margin-right: 15px;">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+
+                    <a href="https://www.facebook.com/Anift" target="_blank"
+                        style="color: white; text-decoration: none;">
+                        <i class="bi bi-facebook"></i> Facebook
+                    </a>
+
+                </div>
+
+            </div>
+
+            <hr style="border-color: #DCEBFA;">
+
+            <!-- Copyright -->
+            <div class="text-center">
+                <p style="color: #DCEBFA; font-size: 14px; margin-bottom: 0;">
+                    &copy; 2026 Abake Cake.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+        // Memilih dari Card
+        function pilihKue(namaKue) {
+            document.getElementById("kue").value = namaKue;
+
+            // Pindah ke formulir pemesanan
+            document.getElementById("contact").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+        // Menampilkan data pesanan di Modal
+        document.getElementById("orderForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            document.getElementById("hasilNama").textContent =
+                document.getElementById("nama").value;
+
+            document.getElementById("hasilEmail").textContent =
+                document.getElementById("email").value;
+
+            document.getElementById("hasilKue").textContent =
+                document.getElementById("kue").value;
+
+            document.getElementById("hasilDetail").textContent =
+                document.getElementById("detail").value || "-";
+
+            // Membuka Modal
+            var modal = new bootstrap.Modal(
+                document.getElementById("modalKonfirmasi")
+            );
+
+            modal.show();
+        });
+
+        // Konfirmasi pesanan
+        function konfirmasiPesanan() {
+            alert("Terima kasih! Simulasi pesanan berhasil dikonfirmasi.");
+            document.getElementById("orderForm").reset();
+        }
+    </script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
